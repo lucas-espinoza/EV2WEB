@@ -3,61 +3,82 @@
     padding: 0;
     font-family: 'Roboro', sans-serif;
 }
-
 body {
     background-color: #D9D9D9;
 }
 
+/* Barra de navegacion */
 .navbar {
     list-style-type: none;
     overflow: hidden;
     background-color: #3C6E71;
 }
-
 .navbar li {
     float: left; 
 }
-
 .navbar li a {
     color: #D9D9D9;
     display: block;
     padding: 12px 20px;
     text-decoration: none;
 }
-
 .navbar li a:hover {
     color: #3C6E71;
     background-color: #D9D9D9;
 }
-
 .navbar li .estasEn {
     color: #3C6E71;
     background-color: #D9D9D9;
 }
 
-main {
-    width: 90%;
-    max-width: 2000px;
-    color: #D9D9D9;
-    margin: 20px auto;
+/* Secciona de formulario */
+.formulario {
+    background-color: #3C6E71;
+    width: 500px;
+    padding: 20px 40px;
+    margin: 20px;
+    border-radius: 3px;
+}
+.formulario div {
     display: grid;
-    grid-gap: 20px;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(1, auto);
-    height: 1000px;
+    grid-template-columns: 1;
+    grid-template-rows: 4;
 }
-
-main article {
-    background-color: blueviolet;
-    width: 1100px;
+.formulario div input {
+    padding: 2px;
+    padding-left: 10px;
+    margin: 5px 0px;
+    font-size: large;
+    outline: none;
 }
-
-main aside {
-    background-color: brown;
-    color: burlywood;
-    grid-row-start: 1;
-    grid-row-end: 3;
-    grid-column: 2 / 3;
+.formulario div input:focus{
+    outline: none;
+}
+.formulario div input:active{
+    outline: none;
+}
+.formulario #boton{
     display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+.formulario button {
+    background-color: #D9D9D9;
+    padding: 6px;
+    width: 400px;
+    border:none;
     align-items: center;
-    justify-content: center;}
+    border-radius: 5px;
+}
+.formulario button:hover{
+    background-color: white;
+}
+main {
+    display: flex;
+    justify-content: center;
+}
+
+/* Telefono */
+#telefono {
+    width: 300px;
+}
