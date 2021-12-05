@@ -20,18 +20,21 @@
 
     <!-- Seccion de formulario -->
     <main>
-        <section class="formulario">
-            <div>
-                <input placeholder="Nombre" id="nombre">
-                <input placeholder="Apellido" id="apellido">
-                <input placeholder="Telefono" id="telefono">
-                <input placeholder="Correo" id="correo">
-            </div>
+        <form action="config.php" target="_blank">
+            <section class="formulario">
+                <div>
+                    <input placeholder="Nombre" id="nombre" name="nombre">
+                    <input placeholder="Apellido" id="apellido" name="apellido">
+                    <input placeholder="Telefono" id="telefono" name="telefono">
+                    <input placeholder="Correo" id="correo" name="correo">
+                </div>
     
-            <div id="boton">
-                <button onclick="enviar">ENVIAR</button>
-            </div>
-        </section>
+                <div id="boton">
+                    <button onclick="enviar" type="submit" value="Save">ENVIAR</button>
+                </div>
+            </section>
+        </form>
     </main>
+
 </body>
 </html>
